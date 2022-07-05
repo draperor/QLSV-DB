@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sinh Viên"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/avt"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:src="@drawable/_avt"
+                />
+
+            <Button
+                android:id="@+id/btn_chonAnh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Chọn ảnh"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:id="@+id/edit_mSV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="9"
+                android:hint="Mã sinh viên"
+                android:text=""
+                android:inputType="number"
+                android:textSize="15dp"
+                tools:ignore="HardcodedText,SpUsage" />
+            <EditText
+                android:id="@+id/edit_hoTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Họ và Tên"
+                android:text=""
+                android:inputType="textPersonName"
+                android:textSize="15dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <EditText
+                android:id="@+id/edit_chuyenNganh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Chuyên ngành"
+                android:inputType="text"
+                android:text=""
+                android:textSize="15dp"
+                android:ems="10"
+                tools:ignore="HardcodedText" />
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:text="Xếp Loại: "-->
+<!--                android:textSize="20dp"-->
+<!--                android:id="@+id/tv_xepLoai" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/edit_diem"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Điểm"
+            android:text=""
+
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/cb_chucVu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+
+            android:text="Chức vụ" />
+
+        <RadioGroup
+            android:id="@+id/rg_chucVu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/rb_lopTruong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lớp Trưởng"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_lopPho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lớp Phó" />
+
+            <RadioButton
+                android:id="@+id/rb_biThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bí Thư" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:layout_marginStart="50dp"/>
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trở lại"
+            android:layout_marginLeft="100dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiển Thị Danh Sách"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+</LinearLayout>
+
